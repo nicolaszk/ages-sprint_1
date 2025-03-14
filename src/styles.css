@@ -13,8 +13,8 @@ body {
     border-radius: 10%;
     box-shadow: 9px 8px 15px rgba(0, 0, 0, 0.2);
     position: relative;
-    width:550px; /* Reduced from 90vw to 85vw and max width from 500px to 450px */
-    aspect-ratio: 5 / 8; /* Maintains 500px width to 800px height ratio */
+    width:550px; 
+    aspect-ratio: 5 / 8; 
     background: linear-gradient(rgb(46, 45, 44), rgb(110, 106, 103));
     color: white;
     padding: 2%;
@@ -38,7 +38,7 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     padding-right: 5%;
-    min-height: 30px; /* Minimum height to prevent collapse */
+    min-height: 30px;
 }
 
 .display {
@@ -52,14 +52,15 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     padding-right: 5%;
-    min-height: 40px; /* Minimum height to prevent collapse */
+    min-height: 40px; 
 }
 
 .botoes {
     flex: 7;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr); /* 5 rows for 20 buttons */
+    grid-template-rows: repeat(5, 1fr); 
+    
     gap: min(1vh, 1vw);
     padding: min(1vh, 1vw);
     max-height:80%;
@@ -67,10 +68,17 @@ body {
 
 button {
     font-weight: bold;
+    
     font-size: clamp(1rem, min(2.5vh, 2.5vw), 1.875rem);
+    /** clamp: (valor minimo, valor preferido, valor maximo) - > min (x, y) 
+     * vh -> 1/100 do height do viewport
+     * viewport: area visivel da pagina web
+     * vw: -> 1/100 do width do viewport
+     * rem: tamanho da fonte do elemento raiz
+     **/
     border: none;
     height: 85%;
-    border-radius: calc(50vh);
+    border-radius: calc(50vh); /** diminui quando a altura tambem diminui, ou seja, fica mais achatado para caber na calculadora**/
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     cursor: pointer;
@@ -114,16 +122,16 @@ button:active {
     transform: scale(0.95);
 }
 
-/* Media Query for Different Screen Sizes */
+/*media query*/
 @media (max-width: 768px) {
     .calculadora {
-        width: 80vw; /* Reduced from 85vw to 80vw */
+        width: 80vw; 
     }
 }
 
 @media (max-width: 480px) {
     .calculadora {
-        width: 85vw; /* Reduced from 90vw to 85vw */
+        width: 85vw;
         border-radius: 8%;
     }
     
@@ -133,7 +141,6 @@ button:active {
     }
 }
 
-/* For extra small devices */
 @media (max-width: 360px) {
     .calculadora {
         width: 90vw;
@@ -147,7 +154,7 @@ button:active {
     }
     
     .display {
-        font-size: clamp(1.25rem, 4vw, 2rem); /* Reduced font size for smaller screens */
+        font-size: clamp(1.25rem, 4vw, 2rem); 
     }
 }
 
