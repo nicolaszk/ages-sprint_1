@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site da calculadora legal</title>
+</head>
+<body>
+    <div class="calculadora">
+        <div class="upperDisplay"></div>
+        <div class="display">alguma coisa.</div>
+        <div class="botoes">
+            <button class="botao2" onclick="reset()">CE</button>
+            <button class="botao1" onclick="quaseReset()">C</button>
+            <button class="botao1" onclick="porcentagem()">%</button>
+            <button class="botao3" onclick="division()">÷</button>
+            <button class="botao1" onclick="addNumber(this.innerText)">1</button>
+            <button class="botao1" onclick="addNumber(this.innerText)">2</button>
+            <button class="botao1" onclick="addNumber(this.innerText)">3</button>
+            <button class="botao3" onclick="multiplication()">X</button>
+            <button class="botao1" onclick="addNumber(this.innerText)">4</button>
+            <button class="botao1" onclick="addNumber(this.innerText)">5</button>
+            <button class="botao1" onclick="addNumber(this.innerText)">6</button>
+            <button class="botao3" onclick="operator(this.innerText)">-</button>
+            <button class="botao1" onclick="addNumber(this.innerText)">7</button>
+            <button class="botao1" onclick="addNumber(this.innerText)">8</button>
+            <button class="botao1" onclick="addNumber(this.innerText)">9</button>
+            <button class="botao3" onclick="operator(this.innerText)">+</button>
+            <button class="botao1" onclick="changeSignal()">+/-</button>
+            <button class="botao1" onclick="addNumber(this.innerText)">0</button>
+            <button class="botao1" onclick="decimal()">,</button>
+            <button class="botao3" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

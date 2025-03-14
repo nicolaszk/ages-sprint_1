@@ -1,0 +1,154 @@
+body {
+    background-color: rgb(255, 127, 127);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.calculadora {
+    border-radius: 10%;
+    box-shadow: 9px 8px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width:550px; /* Reduced from 90vw to 85vw and max width from 500px to 450px */
+    aspect-ratio: 5 / 8; /* Maintains 500px width to 800px height ratio */
+    background: linear-gradient(rgb(46, 45, 44), rgb(110, 106, 103));
+    color: white;
+    padding: 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-height:80%;
+    min-width: 300px;
+    max-width: 25%;
+
+}
+
+.upperDisplay {
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: clamp(1rem, 3vw, 2rem);
+    color: gray;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 5%;
+    min-height: 30px; /* Minimum height to prevent collapse */
+}
+
+.display {
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: clamp(1.5rem, 5vw, 3.75rem);
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 5%;
+    min-height: 40px; /* Minimum height to prevent collapse */
+}
+
+.botoes {
+    flex: 7;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr); /* 5 rows for 20 buttons */
+    gap: min(1vh, 1vw);
+    padding: min(1vh, 1vw);
+    max-height:80%;
+}
+
+button {
+    font-weight: bold;
+    font-size: clamp(1rem, min(2.5vh, 2.5vw), 1.875rem);
+    border: none;
+    height: 85%;
+    border-radius: calc(50vh);
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao1 {
+    color: white;
+    filter: drop-shadow(1px 3px 8px #606060);
+    background: linear-gradient(rgb(115, 94, 94), rgb(152, 145, 146));
+}
+
+.botao1:hover {
+    color: rgb(110, 90, 90);
+}
+
+.botao3 {
+    color: white;
+    filter: drop-shadow(1px 3px 8px #606060);
+    background: linear-gradient(rgb(254, 59, 96), rgb(212, 52, 52));
+}
+
+.botao3:hover {
+    color: rgb(110, 90, 90);
+}
+
+.botao2 {
+    filter: drop-shadow(1px 3px 8px #606060);
+    color: rgb(212, 52, 52);
+}
+
+.botao2:hover {
+    color: rgb(154, 23, 23);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Media Query for Different Screen Sizes */
+@media (max-width: 768px) {
+    .calculadora {
+        width: 80vw; /* Reduced from 85vw to 80vw */
+    }
+}
+
+@media (max-width: 480px) {
+    .calculadora {
+        width: 85vw; /* Reduced from 90vw to 85vw */
+        border-radius: 8%;
+    }
+    
+    .botoes {
+        gap: min(0.8vh, 0.8vw);
+        padding: min(0.8vh, 0.8vw);
+    }
+}
+
+/* For extra small devices */
+@media (max-width: 360px) {
+    .calculadora {
+        width: 90vw;
+        border-radius: 5%;
+        padding: 1%;
+    }
+    
+    .botoes {
+        gap: 0.5vh;
+        padding: 0.5vh;
+    }
+    
+    .display {
+        font-size: clamp(1.25rem, 4vw, 2rem); /* Reduced font size for smaller screens */
+    }
+}
+
+
