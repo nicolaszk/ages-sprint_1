@@ -31,3 +31,5 @@ Este projeto é uma calculadora responsiva desenvolvida utilizando HTML, CSS e J
 ```bash
   open index.html
 ```
+
+ ![ Alt Text](https://github.com/cat-milk/Anime-Girls-Holding-Programming-Books/blob/master/Javascript/Tohsaka_Rin_Holding_JS_For_Dummies.png?raw=true)
