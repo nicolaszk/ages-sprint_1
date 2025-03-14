@@ -10,17 +10,17 @@ Este projeto é uma calculadora responsiva desenvolvida utilizando HTML, CSS e J
 
 ## Tecnologias Utilizadas
 
-- **HTML**: Estruturação do conteúdo da calculadora.
-- **CSS**: Estilização e responsividade da interface.
-- **JavaScript**: Funcionalidades e operações da calculadora.
+- **HTML**: Estruturação do conteúdo da calculadora.![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+- **CSS**: Estilização e responsividade da interface. ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+- **JavaScript**: Funcionalidades e operações da calculadora. ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ## Como Utilizar
 
 1. Clone o repositório para o seu ambiente local:
 
-   ```bash
+```bash
    git clone https://github.com/nicolaszk/ages-sprint_1.git
-  
+```  
 2. Navegue até o diretório do projeto
 
  ```bash
